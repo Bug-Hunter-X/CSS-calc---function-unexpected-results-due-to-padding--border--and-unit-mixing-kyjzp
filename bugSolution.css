@@ -1,0 +1,15 @@
+/* bugSolution.css */
+
+.container {
+  width: 100%;
+  padding: 10px;
+  border: 5px solid black;
+  box-sizing: border-box; /* This is the key change */
+}
+
+.inner-element {
+  width: calc(100% - 20px); /* Adjust for padding and border */
+  background-color: lightblue;
+}
+
+/*In this solution box-sizing: border-box; is used to make sure that the padding and border are included in the width calculation. This prevents the inner element from being smaller than expected.  Adjusting the calculation from `calc(100% - 10px)` to `calc(100% - 20px)` accounts for both the left and right 10px padding (or change this according to your needs).*/
